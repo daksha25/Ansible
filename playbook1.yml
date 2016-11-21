@@ -1,0 +1,5 @@
+---
+ - hosts: all
+   tasks:
+    - name: create a file
+      file: path=/home/daksha/newfile1 state=touch

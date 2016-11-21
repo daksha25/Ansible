@@ -1,0 +1,92 @@
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+mysql:x:102:106:MySQL Server,,,:/nonexistent:/bin/false
+messagebus:x:103:108::/var/run/dbus:/bin/false
+postfix:x:105:116::/var/spool/postfix:/bin/false
+dnsmasq:x:106:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+dovecot:x:107:118:Dovecot mail server,,,:/usr/lib/dovecot:/bin/false
+dovenull:x:108:119:Dovecot login user,,,:/nonexistent:/bin/false
+landscape:x:109:120::/var/lib/landscape:/bin/false
+sshd:x:110:65534::/var/run/sshd:/usr/sbin/nologin
+postgres:x:111:121:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+colord:x:113:124:colord colour management daemon,,,:/var/lib/colord:/bin/false
+libvirt-qemu:x:114:107:Libvirt Qemu,,,:/var/lib/libvirt:/bin/false
+libvirt-dnsmasq:x:115:125:Libvirt Dnsmasq,,,:/var/lib/libvirt/dnsmasq:/bin/false
+itisadm:x:0:0:/home/itisadm:/bin/bash:
+s304056:x:501:501:/home/s304056:/bin/bash:
+itam:x:1000:1002::/home/itam:
+jpaas:x:1001:1003:jpaas,,,:/home/jpaas:/bin/bash
+shellinabox:x:104:122:Shell In A Box,,,:/var/lib/shellinabox:/bin/false
+puppet:x:112:126:Puppet configuration management daemon,,,:/var/lib/puppet:/bin/false
+foreman-proxy:x:999:999:Foreman Proxy account:/usr/share/foreman-proxy:/bin/false
+foreman:x:998:998:Foreman:/usr/share/foreman:/sbin/nologin
+tftp:x:116:127:tftp daemon,,,:/var/lib/tftpboot:/bin/false
+swati:x:1002:1004:,,,:/home/swati:/bin/bash
+daksha:x:1003:1005:,,,:/home/daksha:/bin/bash
+redis:x:117:128:redis server,,,:/var/lib/redis:/bin/false
+test1user:x:1004:1006::/home/testuser:
+test:x:1005:1007::/home/test:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+mysql:x:102:106:MySQL Server,,,:/nonexistent:/bin/false
+messagebus:x:103:108::/var/run/dbus:/bin/false
+postfix:x:105:116::/var/spool/postfix:/bin/false
+dnsmasq:x:106:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+dovecot:x:107:118:Dovecot mail server,,,:/usr/lib/dovecot:/bin/false
+dovenull:x:108:119:Dovecot login user,,,:/nonexistent:/bin/false
+landscape:x:109:120::/var/lib/landscape:/bin/false
+sshd:x:110:65534::/var/run/sshd:/usr/sbin/nologin
+postgres:x:111:121:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+colord:x:113:124:colord colour management daemon,,,:/var/lib/colord:/bin/false
+libvirt-qemu:x:114:107:Libvirt Qemu,,,:/var/lib/libvirt:/bin/false
+libvirt-dnsmasq:x:115:125:Libvirt Dnsmasq,,,:/var/lib/libvirt/dnsmasq:/bin/false
+itisadm:x:0:0:/home/itisadm:/bin/bash:
+s304056:x:501:501:/home/s304056:/bin/bash:
+itam:x:1000:1002::/home/itam:
+jpaas:x:1001:1003:jpaas,,,:/home/jpaas:/bin/bash
+shellinabox:x:104:122:Shell In A Box,,,:/var/lib/shellinabox:/bin/false
+puppet:x:112:126:Puppet configuration management daemon,,,:/var/lib/puppet:/bin/false
+foreman-proxy:x:999:999:Foreman Proxy account:/usr/share/foreman-proxy:/bin/false
+foreman:x:998:998:Foreman:/usr/share/foreman:/sbin/nologin
+tftp:x:116:127:tftp daemon,,,:/var/lib/tftpboot:/bin/false
+swati:x:1002:1004:,,,:/home/swati:/bin/bash
+daksha:x:1003:1005:,,,:/home/daksha:/bin/bash
+redis:x:117:128:redis server,,,:/var/lib/redis:/bin/false
+test1user:x:1004:1006::/home/testuser:
+test:x:1005:1007::/home/test:

@@ -1,0 +1,7 @@
+
+
+- include: playbook1.yml
+  when: some_var == "true"
+
+- include: playbook2.yml
+  when: someother_var == "true"

@@ -1,0 +1,4 @@
+---
+ - hosts: all
+   tasks:
+    - add_hosts: name={10.242.138.107}

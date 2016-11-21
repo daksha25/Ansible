@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - ping:
+#    - name: Installs python
+#      raw: apt-get -y install python-simplejson

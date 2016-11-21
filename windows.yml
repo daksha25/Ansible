@@ -1,0 +1,10 @@
+---
+- hosts: windows 
+  gather_facts: false
+
+  roles:
+    - installexe
+    #- delete_operations
+    #- create_operatio 
+    #- precheck
+
