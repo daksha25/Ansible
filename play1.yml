@@ -1,0 +1,5 @@
+---
+ - hosts: all
+   tasks:
+     - name: my task
+       win_menudriven: val1=10 val2=20 val3='3'

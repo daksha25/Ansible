@@ -1,0 +1,8 @@
+---
+ - hosts: all
+   tasks:
+     - name: test my module
+       win_pintotaskbar: 
+                     val1: C:\Program Files\Portecle\
+                     val2: Portecle.exe
+

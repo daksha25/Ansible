@@ -1,0 +1,10 @@
+- name: install java
+  raw: 'C:\Users\514740\Downloads\jdk-7u79-windows-i586.exe /Quiet /NoRestart'
+- name: environment variable
+  raw: echo %PATH%
+- name: set env
+  win_environment:
+     name: JAVA_HOME_NEW
+     value: 'C:\Program Files\Java\jdk1.7.0_79'
+     state: present
+     level: machine

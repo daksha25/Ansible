@@ -1,0 +1,10 @@
+---
+ - hosts: all
+   gather_facts: false
+   tasks: 
+     - name: start mysql container
+       docker:
+         image: tomcat:7.0
+         state: reloaded
+           
+       

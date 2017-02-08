@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servlet>
+    <servlet-name>Benefits</servlet-name>
+    <servlet-class>com.dizzyworld.BenefitsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Benefits</servlet-name>
+    <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+</web-app>

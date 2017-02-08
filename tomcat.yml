@@ -1,0 +1,22 @@
+---
+ - hosts: all
+   tasks:
+    - shell: echo JAVA_HOME is $JAVA_HOME
+      environment:
+        JAVA_HOME: /usr/local/java/jdk1.8.0_111
+#    - name: Extract archive
+#      command: /bin/tar xvf /home/daksha/ansible_demo/apache-tomcat-7.0.61.tar.gz home/daksha/apache-tomcat-7.0.61
+    - name: Symlink install directory
+      file: src=/home/daksha/ansible_demo/apache-tomcat-7.0.61 path=/usr/share/tomcat state=link
+    - name: Configure Tomcat server
+      template: src=/home/daksha/ansible_demo/apache-tomcat-7.0.61/conf/server.xml dest=/usr/share/tomcat/conf/
+      notify: restart tomcat
+    - name: Configure Tomcat users
+      template: src=/home/daksha/ansible_demo/apache-tomcat-7.0.61/conf/tomcat-users.xml dest=/usr/share/tomcat/conf/
+      notify: restart tomcat
+    - name: Install Tomcat init script
+      copy: src=/home/daksha/ansible_demo/apache-tomcat-7.0.61/bin/setclasspath.sh  dest=/etc/init.d/tomcat mode=0755
+    - name: Start Tomcat
+      command: /usr/share/tomcat/bin/startup.sh
+    - name: deploy war file
+      copy: src=/home/daksha/ansible_demo/benefits.war dest=/usr/share/tomcat/webapps/

@@ -1,0 +1,4 @@
+Combine-images:
+ requires:
+  - ubuntu:14.04
+  - tomcat:8.5.4

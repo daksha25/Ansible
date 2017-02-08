@@ -1,0 +1,4 @@
+---
+ - hosts: all
+   tasks:
+    - script: /home/daksha/ansible_demo/script.sh >> test1.txt

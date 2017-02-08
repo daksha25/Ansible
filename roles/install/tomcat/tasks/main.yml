@@ -1,0 +1,36 @@
+---
+  - name: Check if Apache Tomcat already present
+    win_stat:
+      path: '{{ PROJECT_ROOT }}\apache-tomcat-{{ TOMCAT_VERSION }}\bin\tomcat7.exe'
+    register: ApacheInstallExists
+    changed_when: false
+    
+  - name: Create Staging directory for downloading Tomcat
+    win_file: path="{{ DOWNLOAD_DIR }}\\tomcat" state=directory
+    when: ApacheInstallExists.stat.exists != True
+
+  - name: Download Tomcat7 Server
+    win_get_url: 
+      url: '{{ DOWNLOAD_URL }}/{{ TOMCAT_ZIP_FILE}}'
+      dest: '{{ DOWNLOAD_DIR }}\tomcat\{{ TOMCAT_ZIP_FILE }}'
+      force: no
+    when: ApacheInstallExists.stat.exists != True
+
+  - name: Unzip Tomcat
+    win_unzip:  
+      src: '{{ DOWNLOAD_DIR }}\tomcat\{{ TOMCAT_ZIP_FILE }}'
+      dest: '{{ PROJECT_ROOT }}'
+      creates: '{{ PROJECT_ROOT }}\apache-tomcat-{{ TOMCAT_VERSION }}'
+    when: ApacheInstallExists.stat.exists != True
+    register: UnzipTomcat
+
+  - name: set environment
+    win_environment:
+       state: present
+       name: CATALINA_HOME
+       value: '{{ PROJECT_ROOT }}\apache-tomcat-{{ TOMCAT_VERSION }}'
+       level: user
+    when: UnzipTomcat.skipped is not defined
+
+  - include: connector.yml
+    when: UnzipTomcat.skipped is not defined
