@@ -1,6 +1,0 @@
----
-- hosts: all
-  tasks:
-    - shell: echo "hello world"
-    - name: Create file
-      file: path=/home/daksha/ansible_demo/newplay state=touch 

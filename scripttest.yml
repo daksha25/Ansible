@@ -1,4 +1,0 @@
----
- - hosts: all
-   tasks:
-    - script: /home/daksha/script.sh >> test1.txt

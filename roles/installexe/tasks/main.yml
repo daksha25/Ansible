@@ -1,5 +1,0 @@
---- 
-  - name: Install notepad++
-    win_msi:
-       path: D:\Softwares\npp.6.6.6.Installer.exe
-

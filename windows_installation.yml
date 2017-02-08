@@ -1,8 +1,0 @@
----
-- hosts: _Development_ 
-  gather_facts: false
-
-  roles:
-#    - java_install
-    - eclipse_install 
-#   - tomcat_install

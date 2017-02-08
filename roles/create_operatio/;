@@ -1,6 +1,0 @@
----
-  - name: CreateFile
-    win_file:
-        path: D:\newfile1.txt
-        state: touch
-

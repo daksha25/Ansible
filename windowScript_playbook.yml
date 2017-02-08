@@ -1,7 +1,0 @@
----
- - hosts: all
-   tasks:
-    - name: create file
-      script: script/createfile.ps1
-    - name: install exe
-      script: script/installexe.ps1

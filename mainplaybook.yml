@@ -1,7 +1,0 @@
----
- - hosts: all
-   tasks:
-    - name: running multiple playbooks
-      shell: echo "Running tasks"
- - include: playbook1.yml
- - include: playbook2.yml

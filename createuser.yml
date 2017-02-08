@@ -1,7 +1,0 @@
----
-- hosts: all
-  sudo: yes
-  tasks:
-   - name: Add User 
-     user: name=user
-           password=usx7b002w0mBw

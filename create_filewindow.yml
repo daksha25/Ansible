@@ -1,7 +1,0 @@
----
- - hosts: all
-   tasks: 
-    - name: create file
-      win_file:
-        path: C:\newfile1.txt
-        state: touch    
